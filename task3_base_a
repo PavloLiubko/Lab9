@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	setlocale(LC_ALL, "RU");
+
+	double S = 0.0;
+	for (int i = 1; i <= 20; i++) {
+		for (int j = i; j <= 30; j++) {
+			S += i / j;
+		}
+	}
+
+	cout << "Відповідь:" << S;
+
+	return 0;
+}
