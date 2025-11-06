@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	setlocale(LC_ALL, "RU");
+
+	int S = 0;
+	int x, n;
+	cout << "Введіть число х:";
+	cin >> x;
+	cout << "\n";
+	cout << "Введіть число n:";
+	cin >> n;
+	cout << "\n";
+
+
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = 2; j <= n; j++) {
+			S += (x + i + j);
+		}
+	}
+
+	cout << "Результат = " << S;
+
+	return 0;
+}
