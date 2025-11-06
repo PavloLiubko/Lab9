@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	setlocale(LC_ALL, "RU");
+
+	int n;
+	cout << "Скільки товарів ви бажаєте отримати, якщо 1 вартує 2,4 грн? :";
+	cin >> n;
+
+	for (int i = 1; i <= n; i++) {
+		cout << i << "шт елементів товару вартує " << i * 2.4 << "\n";
+	}
+
+	return 0;
+}
