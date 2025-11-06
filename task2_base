@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+double calc(double a) {
+	return (a + a) / 5;
+}
+
+int main() {
+
+	setlocale(LC_ALL, "RU");
+	cout << "Для 1,2 : " << calc(1.2) << "\n";
+	cout << "Для 10 : " << calc(10) << "\n";
+	return 0;
+}
