@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int factorial(int x) {
+    int result = 1;
+    for (int i = 1; i <= x; i++) {
+        result *= i;
+    }
+    
+    return result;
+}
+
+int main()
+{
+    int n;
+    cout << "Введіть значення числа n:";
+    cin >> n;
+    cout << "\n";
+    
+    int S = 0;
+    for (int i = 1; i <= n; i++) {
+        S += factorial(i);
+    }
+    
+    cout << "Ваш результат:" << S;
+    
+    return 0;
+}
