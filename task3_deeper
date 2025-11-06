@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    
+    double a, h;
+    cout << "Введіть число а:";
+    cin >> a;
+    cout << "Введіть крок h:";
+    cin >> h;
+    
+    double S = 0;
+    double i = -5.5;
+    while (i < a) {
+        S += i;
+        i += h;
+        
+    }
+    cout << "Сума = " << S;
+    
+    return 0;
+}
