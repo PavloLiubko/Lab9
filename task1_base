@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+
+int main()
+{
+    setlocale(LC_ALL, "RU"); // українського кодування на жаль не знайшов 
+
+	cout << "Завдання a: \n";
+
+	for (int i = 20; i < 35; i++) {
+		if (i % 2 == 0) {
+			cout << i << "\n";
+		}
+	}
+
+	int a, b, n;
+	cout << "Введіть число а:";
+	cin >> a;
+	cout << "Введіть число b:";
+	cin >> b;
+		cout << "Введіть число n:";
+	cin >> n;
+
+	cout << "Завдання b: \n";
+
+	for (int i = a; i < b; i++) {
+		if (i % n == 0) { continue; }
+		else {
+			cout << i << "\n";
+		}
+	}
+
+    return 0;
+}
+
